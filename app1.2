@@ -1,0 +1,51 @@
+<head>
+	<title>notas</title>
+
+</head>>
+<body>
+	<div align="center">
+		<h1>NOTAS PROMEDIO</h1>
+	</div>
+	<div align="center">
+		<form method="post" action="ejemplo1.php">
+			<label>nota 1:</label>
+			<input type="text" name="n1" />
+			<br /><br />
+
+			<label>nota 2:</label>
+			<input type="text" name="n2" />
+			<br /><br />
+
+			<label>nota 3:</label>
+			<input type="text" name="n3" />
+			<br /><br />
+
+			<label>nota 4:</label>
+			<input type="text" name="n4" />
+			<br /><br />
+
+            <input type="submit" value="enviar" />
+        </form>
+    </div>
+</body>
+
+
+<?php 
+
+$nota1=$_POST('n1');
+$nota2=$_POST('n1');
+$nota3=$_POST('n1');
+$nota4=$_POST('n1');
+$prom=(($nota1+$nota2+$nota+$nota4)/4);
+
+
+if ($prom >=60)
+{
+echo "aprobado";	
+}
+else
+{
+	echo "reprobado";
+}
+
+?>
